@@ -22,6 +22,7 @@
     font-size: 18px;
     color: var(--Stone600);
     background-color: var(--Stone100);
+    align-items: center;
     
 
   }
@@ -149,3 +150,4 @@
   }
 
 }
+
