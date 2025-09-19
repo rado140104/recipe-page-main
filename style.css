@@ -14,15 +14,15 @@
       }
   body {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-family: 'Outfit', sans-serif;
-    margin: 0;
-    padding: 100px 20px 100px;
-    font-size: 18px;
-    color: var(--Stone600);
-    background-color: var(--Stone100);
-    align-items: center;
+  flex-direction: column; /* sloupec */
+  justify-content: center; /* svisle */
+  align-items: center;     /* horizontálně */
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 100px 20px 100px;
+  font-size: 18px;
+  color: var(--Stone600);
+  background-color: var(--Stone100);
     
 
   }
@@ -150,4 +150,5 @@
   }
 
 }
+
 
