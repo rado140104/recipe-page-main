@@ -1,0 +1,150 @@
+
+    :root {
+     --White: hsl(0, 0%, 100%);
+
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: #5f574e;
+    --Stone900: hsl(24, 5%, 18%);
+    
+    --Brown800: hsl(14, 45%, 36%);
+    
+    --Rose800: hsl(332, 51%, 32%);
+      --Rose50: hsl(330, 100%, 98%);
+      }
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 100px 20px 100px;
+    font-size: 18px;
+    color: var(--Stone600);
+    background-color: var(--Stone100);
+    
+
+  }
+  h2 {
+    margin: 25px 0px; 
+
+    font-family: 'Young-serif', sans-serif;
+    font-weight: 600;
+    color: var(--Brown800);
+    
+  }
+  li {
+    padding-left: 10px;
+    line-height: 1.6;
+  }
+  li::marker {
+    font-weight: bold;
+    color: var(--Brown800)
+  }
+  .recipe {
+    width: 100%;
+    max-width: 735px;
+
+    background-color: var(--White);
+    border-radius: 10px;
+    padding: 35px 40px;
+  }
+  .header {
+    margin-bottom: 30px;
+  }
+  .recipe-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    height: auto;
+    
+  }
+  h1 {
+    margin: 40px 0px 27px;
+    font-family: 'Outfit', serif;
+    color: var(--Stone900);
+    font-weight: 400;
+    font-weight: bold;
+  }
+ .preparation-time {
+  background-color: var(--Rose50);
+  border-radius: 20px;
+  padding: 20px 0px;
+ }
+ .preparation-title {
+  margin: 0;
+  margin-left: 25px;
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  color: var(--Rose800);
+ }
+ .preparation-list {
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 1.6;
+ }
+ .ingredients {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--Stone150);
+ }
+ .instructions-section {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--Stone150);
+ }
+ .nutrition-table {
+  display: grid;
+  padding-bottom: 12px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 40px);
+  align-items: center;
+ }
+ .nutrition-table dt,
+  .nutrition-table dd {
+    display: inline-block;
+    padding-bottom: 12p;
+  }
+  .nutrition-table dt {
+    padding-left: 30px;
+  }
+  .nutrition-table dd {
+    margin: 0;
+    font-weight: 700;
+    color: var(--Brown800)
+  }
+  .nutrition-table dd,
+  .nutrition-table dt {
+    border-bottom: 1px solid var(--Stone150);
+  }
+ /* Mobilní zařízení (do 600px šířky) */
+@media (max-width: 600px) {
+  body {
+    padding:0px; /* menší padding nahoře/dole a po stranách */
+  }
+
+  .recipe {
+    padding: 10px 10px 35px; /* menší vnitřní odsazení */
+    border-radius: 0;        /* žádné zaoblení rohů */
+  }
+
+  section {
+    padding: 0 15px;          /* menší mezera po stranách */
+  }
+
+  .header__image {
+    width: 100%;              /* obrázek se přizpůsobí šířce obrazovky */
+    border-radius: 0;
+  }
+
+  .preparation__time {
+    margin-inline: 15px;      /* odsazení vlevo a vpravo */
+  }
+
+  ul, ol {
+    padding-left: 20px;       /* seznamy se posunou od okraje */
+  }
+
+  h1, h2, h3, p {
+    font-size: 90%;            /* text lehce zmenšený, aby se vešel */
+  }
+}
