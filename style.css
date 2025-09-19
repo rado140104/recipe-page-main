@@ -14,8 +14,7 @@
       }
   body {
     display: flex;
-  flex-direction: column; /* sloupec */
-  justify-content: center; /* svisle */
+  flex-direction: column; /* sloupec */ /* svisle */
   align-items: center;     /* horizontálně */
   font-family: 'Outfit', sans-serif;
   margin: 0;
@@ -150,5 +149,6 @@
   }
 
 }
+
 
 
